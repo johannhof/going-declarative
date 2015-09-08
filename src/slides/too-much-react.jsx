@@ -16,13 +16,13 @@ const TooMuchReact = React.createClass({
         {this.props.sub === 1 &&
           <div>
             <h3>Functional composition</h3>
-            <img height="400" src="../../img/react_structure.svg" />
+            <img height="400" src="img/react_structure.svg" />
           </div>
         }
         {this.props.sub === 2 &&
           <div>
             <h3>Functional composition !== manual observation</h3>
-            <img height="400" src="../../img/flux_structure.svg" />
+            <img height="400" src="img/flux_structure.svg" />
           </div>
         }
 

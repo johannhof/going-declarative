@@ -4,7 +4,7 @@ import {randomColors, combineColors} from './utils';
 import {animateTo} from './animate';
 import location from '../location';
 
-const correctSlide = location.map(({slide}) => slide === '/how-bacon-works');
+const correctSlide = location.map(({slide}) => slide === 'how-bacon-works');
 
 const color1 = Bacon
   .interval(1400)
