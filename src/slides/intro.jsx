@@ -15,7 +15,7 @@ const Intro = React.createClass({
             <h1>
               The good old days
             </h1>
-            <img src="../../img/paulirish.png" />
+            <img src="img/paulirish.png" />
           </div>
         }
         {this.props.sub > 0 && this.props.sub < 6 &&
@@ -24,16 +24,16 @@ const Intro = React.createClass({
               What's your mental model of application architecture?
             </h1>
             {this.props.sub > 1 &&
-              <img height={300} src="../../img/MVC-Process.svg" />
+              <img height={300} src="img/MVC-Process.svg" />
             }
             {this.props.sub > 2 &&
-              <img height={300} src="../../img/mvp.png" />
+              <img height={300} src="img/mvp.png" />
             }
             {this.props.sub > 4 &&
-              <img width={300} src="../../img/kitten.jpg" />
+              <img width={300} src="img/kitten.jpg" />
             }
             {this.props.sub > 3 &&
-              <img width={750} src="../../img/mvvm.png" />
+              <img width={750} src="img/mvvm.png" />
             }
           </div>
         }

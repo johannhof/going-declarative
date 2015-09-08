@@ -12,7 +12,7 @@ const Flux = React.createClass({
       <div>
         <h1>Isn't this what Flux solves?</h1>
         {this.props.sub > 0 &&
-          <img src="../../img/flux_flow.svg" />
+          <img src="img/flux_flow.svg" />
         }
         {this.props.sub > 1 &&
           <h2>React Views have to do logic to handle application flow</h2>
