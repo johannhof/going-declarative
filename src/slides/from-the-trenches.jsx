@@ -23,7 +23,7 @@ const FromTheTrenches = React.createClass({
 
             <h3>If you want, just start off with a <b>single file</b></h3>
             <h3>The modular nature of both React and Bacon will allow for easy reorganization</h3>
-            <img height={400} src="../../img/bacon_structure.svg" />
+            <img height={400} src="img/bacon_structure.svg" />
           </div>
         }
         {this.props.sub === 2 &&

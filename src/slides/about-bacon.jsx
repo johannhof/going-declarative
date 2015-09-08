@@ -8,10 +8,10 @@ const Flow = React.createClass({
           <div>
             <h1>We need a flow management tool</h1>
             {this.props.sub === 0 &&
-              <img src="../img/flow_management.svg" />
+              <img src="img/flow_management.svg" />
             }
             {this.props.sub === 1 &&
-              <img src="../img/flow_management1.svg" />
+              <img src="img/flow_management1.svg" />
             }
           </div>
         }
