@@ -31,34 +31,34 @@ Bacon
   .onValues(function(_colors, {slide, sub}){
     let el;
     switch(slide){
-      case '/the-end':
+      case 'the-end':
         el = <TheEnd sub={sub} />;
         break;
-      case '/alternatives':
+      case 'alternatives':
         el = <Alternatives sub={sub} />;
         break;
-      case '/too-much-react':
+      case 'too-much-react':
         el = <TooMuchReact sub={sub} />;
         break;
-      case '/what-about-flux':
+      case 'what-about-flux':
         el = <Flux sub={sub} />;
         break;
-      case '/from-the-trenches':
+      case 'from-the-trenches':
         el = <FromTheTrenches sub={sub} />;
         break;
-      case '/how-bacon-works':
+      case 'how-bacon-works':
         el = <HowBacon colors={_colors} sub={sub} />;
         break;
-      case '/bacon-and-react':
+      case 'bacon-and-react':
         el = <BaconAndReact sub={sub} />;
         break;
-      case '/about-bacon':
+      case 'about-bacon':
         el = <AboutBacon sub={sub} />;
         break;
-      case '/flow':
+      case 'flow':
         el = <Flow sub={sub} />;
         break;
-      case '/intro':
+      case 'intro':
         el = <Intro sub={sub} />;
         break;
       default:

@@ -2,17 +2,17 @@ import Bacon from 'baconjs';
 
 // slide order with subslides
 const slides = [
-  {slide: '/', sub: 0},
-  {slide: '/intro', sub: 10},
-  {slide: '/flow', sub: 4},
-  {slide: '/about-bacon', sub: 3},
-  {slide: '/how-bacon-works', sub: 7},
-  {slide: '/bacon-and-react', sub: 1},
-  {slide: '/from-the-trenches', sub: 5},
-  {slide: '/what-about-flux', sub: 3},
-  {slide: '/too-much-react', sub: 2},
-  {slide: '/alternatives', sub: 0},
-  {slide: '/the-end', sub: 0}
+  {slide: 'home', sub: 0},
+  {slide: 'intro', sub: 10},
+  {slide: 'flow', sub: 4},
+  {slide: 'about-bacon', sub: 3},
+  {slide: 'how-bacon-works', sub: 7},
+  {slide: 'bacon-and-react', sub: 1},
+  {slide: 'from-the-trenches', sub: 5},
+  {slide: 'what-about-flux', sub: 3},
+  {slide: 'too-much-react', sub: 2},
+  {slide: 'alternatives', sub: 0},
+  {slide: 'the-end', sub: 0}
 ];
 
 // very stupid router with built-in support for
@@ -35,7 +35,10 @@ const navigation = location
     return Bacon
       .fromEvent(window, 'keyup')
       .scan(_loc, function(loc, e){
-        let index = slides.findIndex(({slide}) => slide === loc.slide);
+        let index = slides.findIndex(({slide}) => ~loc.slide.indexOf(slide));
+        if(index === -1){
+          index = 0;
+        }
         let s = slides[index];
         let sub = loc.sub;
         if(e.keyCode === 39){
