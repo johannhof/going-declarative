@@ -1,0 +1,78 @@
+body {
+    font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+code, pre, samp, kbd {
+  font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 1.233rem;
+}
+
+kbd { font-weight: bold; }
+h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+
+/* Minor third */
+h1 { font-size: 3.688em; }
+h2 { font-size: 2.574em; }
+h3, li { font-size: 1.928em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+small { font-size: 0.833em; }
+
+h1, h2, h3, ul { line-height: 3rem; }
+
+.head {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+}
+
+.container {
+  padding-top: 40px;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.color-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 160px;
+  padding-top: 100px;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.color{
+  transition: background-color 0.4s;
+  border-radius: 85px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.color i.fa {
+  font-size: 56px;
+  margin: 20px 26px;
+}
+
+.color-ball{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
